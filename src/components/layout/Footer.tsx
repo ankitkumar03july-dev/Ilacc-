@@ -12,7 +12,6 @@ const footerLinks = {
     { label: "Trade", href: "#trade" },
     { label: "Culture", href: "#culture" },
     { label: "Research", href: "#research" },
-    { label: "Defence", href: "#defence" },
     { label: "Membership", href: "#membership" },
   ],
   resources: [
