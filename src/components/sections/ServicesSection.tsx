@@ -76,8 +76,8 @@ const ServicesSection = () => {
               {/* Header */}
               <div className={`${category.color} p-6 text-white`}>
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
-                    <category.icon className="w-6 h-6" />
+                  <div className="w-14 h-14 md:w-16 md:h-16 bg-white/20 rounded-xl flex items-center justify-center">
+                    <category.icon className="w-8 h-8 md:w-9 md:h-9" />
                   </div>
                   <h3 className="font-heading text-lg md:text-xl font-bold">
                     {category.title}

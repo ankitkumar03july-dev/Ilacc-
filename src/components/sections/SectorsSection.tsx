@@ -85,8 +85,8 @@ const SectorsSection = () => {
               
               {/* Content */}
               <div className="absolute inset-0 flex flex-col items-center justify-end p-4 text-center">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-accent/90 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                  <sector.icon className="w-5 h-5 md:w-6 md:h-6 text-accent-foreground" />
+                <div className="w-12 h-12 md:w-14 md:h-14 bg-accent/90 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                  <sector.icon className="w-6 h-6 md:w-8 md:h-8 text-accent-foreground" />
                 </div>
                 <h3 className="font-heading text-xs md:text-sm font-bold text-white leading-tight">
                   {sector.title}

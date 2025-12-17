@@ -36,7 +36,7 @@ const AboutSection = () => {
                   key={index}
                   className="flex flex-col items-center p-4 bg-secondary rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 group"
                 >
-                  <feature.icon className="w-8 h-8 mb-2 text-accent group-hover:text-primary-foreground transition-colors" />
+                  <feature.icon className="w-10 h-10 md:w-12 md:h-12 mb-2 text-accent group-hover:text-primary-foreground transition-colors" />
                   <span className="text-sm font-medium">{feature.label}</span>
                 </div>
               ))}

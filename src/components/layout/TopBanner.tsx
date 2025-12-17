@@ -1,8 +1,34 @@
 import { X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+const weekdays = [
+  "SUNDAY",
+  "MONDAY", 
+  "TUESDAY",
+  "WEDNESDAY",
+  "THURSDAY",
+  "FRIDAY",
+  "SATURDAY"
+];
+
+const getGivingDay = () => {
+  const today = new Date();
+  const dayName = weekdays[today.getDay()];
+  return `GIVING${dayName}`;
+};
 
 const TopBanner = () => {
   const [isVisible, setIsVisible] = useState(true);
+  const [givingDay, setGivingDay] = useState(getGivingDay());
+
+  useEffect(() => {
+    // Update at midnight
+    const interval = setInterval(() => {
+      setGivingDay(getGivingDay());
+    }, 1000 * 60 * 60); // Check every hour
+
+    return () => clearInterval(interval);
+  }, []);
 
   if (!isVisible) return null;
 
@@ -10,8 +36,8 @@ const TopBanner = () => {
     <div className="bg-accent text-accent-foreground py-2 px-4 relative">
       <div className="container mx-auto flex items-center justify-center text-center">
         <p className="text-sm font-medium">
-          This #GIVINGTUESDAY, donate to protect Latino families across the country.{" "}
-          <a href="#donate" className="underline font-bold hover:opacity-80 transition-opacity">
+          This <span className="font-bold">#{givingDay}</span>, support India-GRULAC partnerships and cooperation.{" "}
+          <a href="#contact" className="underline font-bold hover:opacity-80 transition-opacity">
             Donate Here
           </a>
         </p>

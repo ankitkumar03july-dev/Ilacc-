@@ -81,8 +81,8 @@ const ImpactAreasSection = () => {
               
               {/* Content */}
               <div className="relative z-10 h-full flex flex-col items-center justify-center p-4 md:p-6 text-center">
-                <div className={`w-14 h-14 md:w-16 md:h-16 ${area.color} bg-opacity-20 group-hover:bg-white/20 rounded-xl flex items-center justify-center mb-4 transition-colors`}>
-                  <area.icon className="w-7 h-7 md:w-8 md:h-8 text-foreground group-hover:text-white transition-colors" />
+                <div className={`w-16 h-16 md:w-20 md:h-20 ${area.color} bg-opacity-20 group-hover:bg-white/20 rounded-xl flex items-center justify-center mb-4 transition-colors`}>
+                  <area.icon className="w-9 h-9 md:w-10 md:h-10 text-foreground group-hover:text-white transition-colors" />
                 </div>
                 <h3 className="font-heading text-sm md:text-base font-bold text-foreground group-hover:text-white transition-colors leading-tight">
                   {area.title}

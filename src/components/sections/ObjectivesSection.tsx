@@ -82,8 +82,8 @@ const ObjectivesSection = () => {
               key={index}
               className="bg-card border border-border rounded-xl p-6 hover:shadow-xl hover:border-accent/30 transition-all duration-300 group card-hover"
             >
-              <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
-                <objective.icon className="w-7 h-7 text-primary group-hover:text-accent transition-colors" />
+              <div className="w-16 h-16 md:w-18 md:h-18 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
+                <objective.icon className="w-9 h-9 md:w-10 md:h-10 text-primary group-hover:text-accent transition-colors" />
               </div>
               <h3 className="font-heading text-lg md:text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                 {objective.title}
