@@ -48,19 +48,19 @@ const Footer = () => {
               The premier institutional gateway linking India with the 33 nations of Latin America & the Caribbean. Promoting trade, investment, culture, and strategic cooperation.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="w-9 h-9 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/ilacc.in/" className="w-9 h-9 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" aria-label="Facebook">
                 <Facebook className="h-4 w-4" />
               </a>
-              <a href="#" className="w-9 h-9 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" aria-label="X">
+              <a href="https://x.com/ilaccin" className="w-9 h-9 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" aria-label="X">
                 <XIcon className="h-4 w-4" />
               </a>
-              <a href="#" className="w-9 h-9 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" aria-label="YouTube">
+              <a hrefhttps://www.youtube.com/@ilacc_in" className="w-9 h-9 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" aria-label="YouTube">
                 <Youtube className="h-4 w-4" />
               </a>
-              <a href="#" className="w-9 h-9 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/ilacc.in/" className="w-9 h-9 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" aria-label="Instagram">
                 <Instagram className="h-4 w-4" />
               </a>
-              <a href="#" className="w-9 h-9 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/indo-latin-american-caribbean-council" className="w-9 h-9 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" aria-label="LinkedIn">
                 <Linkedin className="h-4 w-4" />
               </a>
             </div>
