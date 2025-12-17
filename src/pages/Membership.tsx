@@ -6,36 +6,44 @@ import {
   Star, Users, FileText, Award, Calendar, 
   CheckCircle, ArrowRight, Crown 
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const benefits = [
   {
     icon: Users,
     title: "VIP Access to B2B/B2G Meetings",
-    description: "Get priority access to exclusive business-to-business and business-to-government meetings with key stakeholders."
+    description:
+      "Get priority access to exclusive business-to-business and business-to-government meetings with key stakeholders.",
   },
   {
     icon: Calendar,
     title: "Invitations to ILACC Trade Missions",
-    description: "Join official ILACC delegations to explore markets across India and GRULAC nations."
+    description:
+      "Join official ILACC delegations to explore markets across India and GRULAC nations.",
   },
   {
     icon: FileText,
     title: "Exclusive Reports & Market Studies",
-    description: "Access comprehensive market intelligence, trade reports, and sectoral analysis."
+    description:
+      "Access comprehensive market intelligence, trade reports, and sectoral analysis.",
   },
   {
     icon: Award,
     title: "Branding Visibility",
-    description: "Showcase your brand across ILACC platforms, events, and publications."
+    description:
+      "Showcase your brand across ILACC platforms, events, and publications.",
   },
   {
     icon: Star,
     title: "Priority Cultural & Academic Programs",
-    description: "First access to cultural exchanges, academic partnerships, and educational initiatives."
+    description:
+      "First access to cultural exchanges, academic partnerships, and educational initiatives.",
   },
 ];
 
 const Membership = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-background">
       <TopBanner />
@@ -51,7 +59,7 @@ const Membership = () => {
             Become an <span className="text-primary">ILACC Member</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Join India's premier platform for India-GRULAC business and cultural cooperation
+            Join India's premier platform for India–GRULAC business and cultural cooperation
           </p>
         </div>
       </section>
@@ -64,20 +72,22 @@ const Membership = () => {
               Why Become an ILACC Member?
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Unlock exclusive benefits and accelerate your India-GRULAC business journey
+              Unlock exclusive benefits and accelerate your India–GRULAC business journey
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-white rounded-2xl p-8 shadow-lg border border-border/50 hover:shadow-xl transition-all duration-300 group"
               >
                 <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <benefit.icon className="h-9 w-9 text-primary" />
                 </div>
-                <h3 className="font-heading text-xl font-bold text-foreground mb-3">{benefit.title}</h3>
+                <h3 className="font-heading text-xl font-bold text-foreground mb-3">
+                  {benefit.title}
+                </h3>
                 <p className="text-muted-foreground">{benefit.description}</p>
               </div>
             ))}
@@ -96,18 +106,21 @@ const Membership = () => {
             <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
               Take the first step towards expanding your business across India and GRULAC
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-white text-primary hover:bg-white/90"
+                onClick={() => navigate("/membership-application")}
               >
                 Apply for Membership <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
+
+              <Button
+                size="lg"
+                variant="outline"
                 className="border-white text-white hover:bg-white/10"
+                onClick={() => navigate("/contact")}
               >
                 Contact Us for Details
               </Button>
