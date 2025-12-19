@@ -128,22 +128,22 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-sm opacity-70">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>New Delhi, India</span>
+                <span>C-12, Third Floor, Near Market, Kailash Colony, New Delhi, South Delhi- 110048, Delhi</span>
               </li>
 
               <li>
                 <a
-                  href="tel:+911234567890"
+                  href="tel:+919821337675"
                   className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 hover:text-primary transition-all"
                 >
                   <Phone className="h-4 w-4" />
-                  <span>+91 12345 67890</span>
+                  <span>+91 9821337675</span>
                 </a>
               </li>
 
               <li>
                 <a
-                  href="mailto:info@ilacc.org"
+                  href="mailto:connect@ilacc.in"
                   className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 hover:text-primary transition-all"
                 >
                   <Mail className="h-4 w-4" />
