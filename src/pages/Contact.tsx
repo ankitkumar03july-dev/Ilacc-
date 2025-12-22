@@ -100,7 +100,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Headquarters</h3>
-                    <p className="text-muted-foreground">New Delhi, India</p>
+                    <p className="text-muted-foreground">C-12, Third Floor, Near Market, Kailash Colony, New Delhi, South Delhi- 110048, Delhi</p>
                   </div>
                 </div>
 
@@ -111,7 +111,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Phone</h3>
                     <a href="tel:+911234567890" className="text-muted-foreground hover:text-primary transition-colors">
-                      +91 123 456 7890
+                      +91 982 133 7675
                     </a>
                   </div>
                 </div>
@@ -123,7 +123,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Email</h3>
                     <a href="mailto:info@ilacc.in" className="text-muted-foreground hover:text-primary transition-colors">
-                      info@ilacc.in
+                      connect@ilacc.in
                     </a>
                   </div>
                 </div>
@@ -145,19 +145,19 @@ const Contact = () => {
               <div className="pt-6 border-t border-border">
                 <h3 className="font-semibold text-foreground mb-4">Follow Us</h3>
                 <div className="flex gap-3">
-                  <a href="#" className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
+                  <a href="https://www.facebook.com/ilacc.in/" className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
                     <Facebook className="h-5 w-5" />
                   </a>
-                  <a href="#" className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
+                  <a href="https://x.com/ilaccin" className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
                     <XIcon className="h-5 w-5" />
                   </a>
-                  <a href="#" className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
+                  <a href="https://www.youtube.com/@ilacc_in" className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
                     <Youtube className="h-5 w-5" />
                   </a>
-                  <a href="#" className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
+                  <a href="https://www.instagram.com/ilacc.in/" className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
                     <Instagram className="h-5 w-5" />
                   </a>
-                  <a href="#" className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
+                  <a href="https://www.linkedin.com/company/indo-latin-american-caribbean-council" className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
                     <Linkedin className="h-5 w-5" />
                   </a>
                 </div>
