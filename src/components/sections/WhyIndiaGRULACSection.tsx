@@ -58,10 +58,10 @@ const WhyIndiaGRULACSection = () => {
               key={index}
               className="bg-primary-light/20 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-primary-light/30 transition-all duration-300 group"
             >
-              <div className="w-14 h-14 md:w-16 md:h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <stat.icon className="w-8 h-8 md:w-9 md:h-9 text-accent" />
+              <div className="w-14 h-14 md:w-16 md:h-16 bg-foreground/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                <stat.icon className="w-8 h-8 md:w-9 md:h-9 text-foreground" />
               </div>
-              <div className="font-heading text-3xl md:text-4xl font-bold text-accent mb-1">
+              <div className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-1">
                 {stat.value}
               </div>
               <div className="font-semibold text-sm md:text-base mb-1">
