@@ -50,12 +50,14 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-2 md:py-3">
           {/* Logo */}
-          <Link to="/" className="flex items-center" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          <Link to="/" className="flex flex-col items-start" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <img 
               src={ilaccLogo} 
               alt="ILACC - Indo-Latin American & Caribbean Council" 
-              className="h-14 md:h-16 lg:h-20 w-auto"
+              className="h-14 md:h-18 lg:h-20 w-auto"
             />
+            <div className="w-full h-0.5 bg-accent mt-1"></div>
+            <span className="text-[8px] md:text-[9px] text-foreground font-medium tracking-wide mt-0.5">Indo Latin American & Caribbean Council</span>
           </Link>
 
           {/* Desktop Navigation */}
