@@ -1,4 +1,5 @@
 import { Globe, Handshake, TrendingUp, Building2 } from "lucide-react";
+import worldMapHighlighted from "@/assets/world-map-highlighted.jpg";
 
 const features = [
   { icon: TrendingUp, label: "Trade" },
@@ -43,41 +44,24 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* Map Illustration */}
-          <div className="order-1 lg:order-2">
-            <div className="relative aspect-square max-w-lg mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl" />
-              <svg viewBox="0 0 400 400" className="w-full h-full p-8">
-                {/* Globe circle */}
-                <circle cx="200" cy="200" r="150" fill="none" stroke="hsl(var(--primary))" strokeWidth="2" opacity="0.3" />
-                <circle cx="200" cy="200" r="120" fill="none" stroke="hsl(var(--primary))" strokeWidth="1" opacity="0.2" />
-                
-                {/* India representation */}
-                <g transform="translate(250, 180)">
-                  <path d="M0,0 L20,5 L25,25 L15,40 L5,35 L-5,20 Z" fill="hsl(var(--accent))" opacity="0.8" />
-                  <circle cx="10" cy="20" r="8" fill="hsl(var(--accent))" className="animate-pulse" />
-                  <text x="10" y="60" fill="hsl(var(--foreground))" fontSize="12" textAnchor="middle" fontWeight="600">INDIA</text>
-                </g>
-
-                {/* LAC representation */}
-                <g transform="translate(100, 200)">
-                  <path d="M0,30 L10,0 L25,10 L30,40 L40,80 L35,100 L20,90 L10,70 L5,50 Z" fill="hsl(var(--primary))" opacity="0.6" />
-                  <circle cx="20" cy="50" r="8" fill="hsl(var(--primary))" className="animate-pulse" style={{ animationDelay: '0.5s' }} />
-                  <text x="20" y="120" fill="hsl(var(--foreground))" fontSize="12" textAnchor="middle" fontWeight="600">GRULAC</text>
-                </g>
-
-                {/* Connection arc */}
-                <path d="M260,200 Q200,120 120,250" stroke="hsl(var(--accent))" strokeWidth="3" fill="none" strokeDasharray="8,4" className="animate-pulse" />
-                
-                {/* Connection dots */}
-                <circle cx="190" cy="150" r="4" fill="hsl(var(--accent))" />
-              </svg>
+          {/* World Map with India Highlighted */}
+          <div className="order-1 lg:order-2 w-full">
+            <div className="relative w-full mx-auto overflow-hidden rounded-2xl md:rounded-3xl bg-gradient-to-br from-muted/50 via-background to-accent/10 shadow-lg">
+              {/* Map container with better mobile sizing */}
+              <div className="p-3 sm:p-5 md:p-8 pb-16 sm:pb-18 md:pb-20">
+                <img 
+                  src={worldMapHighlighted} 
+                  alt="World map highlighting India and Latin America & Caribbean regions"
+                  className="w-full h-auto object-contain rounded-lg md:rounded-xl min-h-[180px] sm:min-h-[220px] md:min-h-[280px]"
+                  style={{ imageRendering: 'auto' }}
+                />
+              </div>
 
               {/* Stats overlay */}
-              <div className="absolute bottom-4 left-4 right-4 bg-primary text-primary-foreground p-4 rounded-xl">
-                <div className="text-center">
-                  <span className="text-2xl md:text-3xl font-bold text-accent">33</span>
-                  <span className="text-sm ml-2 opacity-90">Nations Connected</span>
+              <div className="absolute bottom-0 left-0 right-0 bg-primary text-primary-foreground p-3 sm:p-4 md:p-5">
+                <div className="text-center flex items-center justify-center gap-2">
+                  <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-accent">33</span>
+                  <span className="text-xs sm:text-sm md:text-base opacity-90">Nations Connected</span>
                 </div>
               </div>
             </div>
