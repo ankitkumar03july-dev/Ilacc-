@@ -84,19 +84,19 @@ const Header = () => {
 
             {/* Social Icons */}
             <div className="flex items-center gap-2">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/ilacc.in/" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Facebook">
                 <Facebook className="h-4 w-4" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="X">
+              <a href="https://x.com/ilaccin" className="text-muted-foreground hover:text-primary transition-colors" aria-label="X">
                 <XIcon className="h-4 w-4" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="YouTube">
+              <a href="https://www.youtube.com/@ilacc_in" className="text-muted-foreground hover:text-primary transition-colors" aria-label="YouTube">
                 <Youtube className="h-4 w-4" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/ilacc.in/" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Instagram">
                 <Instagram className="h-4 w-4" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/indo-latin-american-caribbean-council" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
                 <Linkedin className="h-4 w-4" />
               </a>
             </div>
