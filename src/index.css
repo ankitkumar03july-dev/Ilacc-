@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ILACC Brand Colors - Based on vibrant multicolor logo */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+
+    /* Primary Teal - From logo */
+    --primary: 174 100% 33%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 174 100% 28%;
+    --primary-light: 174 90% 42%;
+
+    /* Secondary - Light neutral */
+    --secondary: 180 10% 96%;
+    --secondary-foreground: 0 0% 13%;
+
+    /* Accent Orange - From logo */
+    --accent: 32 93% 54%;
+    --accent-foreground: 0 0% 100%;
+    --accent-dark: 32 95% 45%;
+
+    /* Highlight - Lime Green from logo */
+    --highlight: 80 65% 50%;
+    --highlight-foreground: 0 0% 100%;
+
+    /* Logo colors for gradients and accents */
+    --logo-green: 80 65% 50%;
+    --logo-teal: 174 100% 33%;
+    --logo-cyan: 187 100% 42%;
+    --logo-orange: 32 93% 54%;
+    --logo-red: 350 70% 37%;
+    --logo-purple: 276 55% 37%;
+    --logo-blue: 207 100% 35%;
+
+    --muted: 180 10% 95%;
+    --muted-foreground: 0 0% 40%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 180 10% 90%;
+    --input: 180 10% 90%;
+    --ring: 174 100% 33%;
+
+    --radius: 0.5rem;
+
+    /* Typography */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 13% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 13% / 0.1), 0 2px 4px -2px hsl(0 0% 13% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 13% / 0.1), 0 4px 6px -4px hsl(0 0% 13% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(0 0% 13% / 0.15), 0 8px 10px -6px hsl(0 0% 13% / 0.1);
+    --shadow-elevated: 0 25px 50px -12px hsl(0 0% 13% / 0.25);
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(174 100% 33%), hsl(187 100% 42%));
+    --gradient-hero: linear-gradient(135deg, hsl(174 100% 30%), hsl(174 100% 38%));
+    --gradient-accent: linear-gradient(135deg, hsl(32 93% 54%), hsl(32 95% 45%));
+    --gradient-multicolor: linear-gradient(135deg, hsl(80 65% 50%), hsl(174 100% 33%), hsl(207 100% 35%), hsl(276 55% 37%), hsl(350 70% 37%), hsl(32 93% 54%));
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 174 90% 40%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 174 95% 30%;
+    --primary-light: 174 85% 50%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --accent: 32 88% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --highlight: 80 60% 55%;
+    --highlight-foreground: 0 0% 100%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 174 90% 45%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+
+  .gradient-multicolor {
+    background: var(--gradient-multicolor);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-multicolor {
+    background: linear-gradient(90deg, hsl(80 65% 50%), hsl(174 100% 33%), hsl(207 100% 35%), hsl(276 55% 37%), hsl(350 70% 37%), hsl(32 93% 54%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  /* Logo colors for variety */
+  .bg-logo-green { background-color: hsl(80 65% 50%); }
+  .bg-logo-teal { background-color: hsl(174 100% 33%); }
+  .bg-logo-cyan { background-color: hsl(187 100% 42%); }
+  .bg-logo-orange { background-color: hsl(32 93% 54%); }
+  .bg-logo-red { background-color: hsl(350 70% 37%); }
+  .bg-logo-purple { background-color: hsl(276 55% 37%); }
+  .bg-logo-blue { background-color: hsl(207 100% 35%); }
+  
+  .text-logo-green { color: hsl(80 65% 50%); }
+  .text-logo-teal { color: hsl(174 100% 33%); }
+  .text-logo-cyan { color: hsl(187 100% 42%); }
+  .text-logo-orange { color: hsl(32 93% 54%); }
+  .text-logo-red { color: hsl(350 70% 37%); }
+  .text-logo-purple { color: hsl(276 55% 37%); }
+  .text-logo-blue { color: hsl(207 100% 35%); }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+}
